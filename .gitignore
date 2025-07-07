@@ -1,0 +1,75 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Project Specific
+sandbox/*
+!sandbox/.gitkeep
+*.db
+*.sqlite
+*.sqlite3
+chromedriver.exe
+geckodriver.exe
+msedgedriver.exe
+
+# Ollama Models
+models/
+
+# Session Data
+sessions/
+temp/
+cache/
+
+# Security
+*.pem
+*.key
+*.crt
+*.p12

@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local AI Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <header>
+            <h1>🤖 Local AI Assistant</h1>
+        </header>
+        <!-- Toolbar: Export, Theme, Voice Controls -->
+        <nav class="toolbar" id="toolbar" aria-label="Chat controls">
+            <!-- Export button with dropdown for Markdown/JSON -->
+            <div class="export-group">
+                <button id="export-btn" title="Export chat" aria-haspopup="true" aria-expanded="false">Export ▼</button>
+                <div id="export-menu" class="export-menu" hidden>
+                    <button id="export-md" type="button">Markdown</button>
+                    <button id="export-json" type="button">JSON</button>
+                </div>
+            </div>
+            <!-- Theme toggle button -->
+            <button id="theme-toggle" title="Toggle dark/light mode" aria-label="Toggle theme">🌙</button>
+            <!-- Microphone (voice input) button -->
+            <button id="voice-input-btn" title="Voice input (mic)" aria-label="Voice input">🎤</button>
+            <!-- Speaker (voice output) button -->
+            <button id="voice-output-btn" title="Voice output (speaker)" aria-label="Voice output">🔊</button>
+        </nav>
+        <!-- Chat history container -->
+        <main>
+            <section id="chat-history" class="chat-history" aria-live="polite" aria-label="Chat history"></section>
+        </main>
+        <!-- Chat input form -->
+        <form id="chat-form" autocomplete="off" aria-label="Send a message">
+            <input type="text" id="chat-input" placeholder="Type your message..." required autocomplete="off" />
+            <button type="submit" id="send-btn">Send</button>
+        </form>
+    </div>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
